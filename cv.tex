@@ -19,6 +19,7 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
+\renewcommand{\familydefault}{\sfdefault}
 
 \documentclass{resume} % Use the custom resume.cls style
 
@@ -50,15 +51,11 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Work Experience} \itemsep -3pt
-    {\bf Co-founder, Stonkify} \href{https://stonkify.io}{\faicon{globe}} \hfill {\em May 2021 - Present}
-    \vspace{3pt}
-    \\ team with friends from passbase and cambridge. 3 tech foudners. in the process of finishing mvp before pitching to vcs.
-
-        {\bf Co-founder, Hangoo} \href{https://feelja.com/}{\faicon{globe}} \href{https://www.linkedin.com/company/hangooapp/}{\faicon{linkedin}}  \href{https://github.com/feelja-tech}{\faicon{github}} \hfill {\em November 2020 - March 2021}
+    {\bf CTO, Hangoo} \href{https://feelja.com/}{\faicon{link}} \href{https://www.linkedin.com/company/hangooapp/}{\faicon{linkedin}}  \href{https://github.com/feelja-tech}{\faicon{github}} \hfill { Dec 2020 - Apr 2021}
     \vspace{3pt}
     \\ taking care of the software side. team from columbia, max plank institut. raised 700k usd. left before incorporation for vision divergence
 
-        {\bf Software Engineer, Passbase} \href{https://passbase.com}{\faicon{globe}} \href{https://docs.passbase.com}{\faicon{book}}  \href{https://www.linkedin.com/company/passbase/}{\faicon{linkedin}} \href{https://github.com/passbase}{\faicon{github}} \hfill {\em March 2019 - September 2020}
+        {\bf Software Engineer, Passbase} \href{https://passbase.com}{\faicon{link}} \href{https://www.linkedin.com/company/passbase/}{\faicon{linkedin}} \href{https://github.com/passbase}{\faicon{github}} \hfill { Mar 2019 - Sep 2020}
     \vspace{3pt}
     \\ Joined the company right after inception as 1st engineer and experienced all the challenges of a growing organization. I've been closely working with the founding team (Standford, Google, TUM) to translate business requirements into product features, which contributed in growing the enterprise customer base from 0 to 50+. Substituted CTO. witnessed the largesd seed round in europe. cowboy, eniac.  Kept in touch with the founders
 
@@ -84,21 +81,27 @@
     % \end{multicols}
 \end{rSection}
 
-\begin{rSection}{SIDE PROJECTS}
+\begin{rSection}{PROJECTS}
 
-    {\bf Delegated authenticasdation over TLS} \href{https://github.com/ma9o/helib-aes-tests}{\faicon{github}} \hfill {\em Passbase OSS, August 2020}
+    {\bf Stonkify} \href{https://stonkify.io}{\faicon{link}} \href{https://stonkify.io}{\faicon{github}} \hfill {Apr 2021 - Jul 2021}
+    \vspace{3pt}
+    \\ Using Monero and I2P to issue equity to fund small creators with no access to capital. \textbullet \space Assembled a small team of 3 developers met through YC's SUS program
+    \textbullet \space Built Nx monorepo for NestJS API and React frontend \textbullet \space Built agent based simulation of the market in Python \textbullet \space Designed Spring AMPQ microservice interface for 3rd party order book matching engine
+    \textbullet \space Contacted a few YouTubers who expressed interest in a commercial solution
+
+        {\bf Delegated authentication over TLS} \href{https://github.com/ma9o/helib-aes-tests}{\faicon{github}} \hfill { Nov 2020 }
     \vspace{3pt}
     \\ An online identity can be scattered across many different providers, all of which might not be implementing a delegated authentication protocol such as SAML or OpenID.
     A service provider willing to authenticate users
     against such a service would have to request access to their credentials and possibly face GDPR issues.
     In this scenario the service provider can still preserve his users' privacy via a distributed usage of AES CTR mode and TLS session tickets, as long as the identity provider is securing his API with TLS 1.3 and AES bulk encryption.
 
-        {\bf Curation market for Brave ads network} \href{https://github.com/ma9o/brave-core}{\faicon{github}} \hfill {\em Coding challenge, March 2019}
+        {\bf Curation market for Brave ads network} \href{https://github.com/ma9o/brave-core}{\faicon{github}} \hfill { Feb 2019}
     \vspace{3pt}
     \\ Brave is a Chromium-based web browser with a client side advertising engine which doesn't record personal data.
     Such ads are sampled from a candidates pool managed by a central authority which is responsible for maintaining the  quality of the ad network high. A decentralized ranking algorithm can be put in place through a curation market, which I implemented in a smart contract (using Bancor) that can be interfaced with a browser extension.
 
-        {\bf Anonimized Aragon voting app} \href{https://github.com/ma9o/aranon}{\faicon{github}} \hfill {\em Coding challenge, January 2019}
+        {\bf Anonimized Aragon voting app} \href{https://github.com/ma9o/aranon}{\faicon{github}} \hfill { Jan 2019}
     \vspace{3pt}
     \\ The Aragon network allows organizations to operate through a decentralized and permissioned framework. Organizations with such a requirement might also need anonimity of transactions, which is not (as of Jan. 2019) provided out of the box by Ethereum.
     Authority with anonomity can be hereby achieved through ring signatures in the browser, which I implemented with a Python library transpiled into C++ and then compiled into WASM.
@@ -110,13 +113,22 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-    {\bf Georg August Universitaet Goettingen} \hfill {\em October 2018 - March 2019}
-    \\ Software Engineering, exchange year (attended MSc courses since BSc was in german)
-    \\{\bf Universita degli Studi di Trento} \hfill {\em September 2016 - September 2018}
-    \\ BSc Computer Science
+    {\bf BSc CS, Georg August Universitaet Goettingen} \href{https://www.uni-goettingen.de/en/1.html}{\faicon{link}} \hfill {Oct 2018 - Mar 2019}
+    \\ Exchange year, attended MSc sourses \textbullet \space Parallel computing (CUDA, OpenMP, SLURM)
+    \textbullet \space Information theory and statistics
+    \textbullet \space Data science (PySpark, sklearn, seaborn, NetworkX) \href{https://github.com/ma9o/repo-mining}{\faicon{github}}
+    \textbullet \space Category theory for programmers (Haskell)
+    \\
+    \\{\bf BSc CS, Universita degli Studi di Trento}  \href{https://www.unitn.it/}{\faicon{link}} \hfill { Sep 2016 - Sep 2018}
 
 \end{rSection}
 
 
+% \begin{rSection}{MISC}
+%     {\bf Interests} \hfill { October 2018 - March 2019}
+%     \\ \textbullet \space  sdf
+%     \\{\bf Languages} \hfill { September 2016 - September 2018}
+%     \\ BSc Computer Science
+% \end{rSection}
 
 \end{document}
