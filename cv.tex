@@ -58,53 +58,39 @@
         {\bf Software Engineer, Passbase} \href{https://passbase.com}{\faicon{link}} \href{https://www.linkedin.com/company/passbase/}{\faicon{linkedin}} \href{https://github.com/passbase}{\faicon{github}} \hfill { Mar 2019 - Sep 2020}
     \vspace{3pt}
     \\ Joined the company right after inception as 1st engineer and experienced all the challenges of a growing organization. I've been closely working with the founding team (Standford, Google, TUM) to translate business requirements into product features, which contributed in growing the enterprise customer base from 0 to 50+. Substituted CTO. witnessed the largesd seed round in europe. cowboy, eniac.  Kept in touch with the founders
+    \\ \textbullet \space Design and PoC of the authentication/authorization process \textbullet \space Refactored data model and designed \underline{GraphQL} API \textbullet \space Benchmarking and deployment of \underline{MXNet} AI models
+    \textbullet \space Refactoring of \underline{Rails} monolith into SOA with strict typing
+    \textbullet \space CI/CD pipeline management with the Hashicorp stack \textbullet \space Technical sales, customer support and QA of outsourced work \textbullet \space Interviewing, mentoring and onboarding of new team members
 
-    % \begin{multicols}{2}
-    % \begin{itemize}
-    %  \renewcommand\labelitemi{$\Rightarrow$}
-    % \item Refactoring the initial Rails monolith into a more scalable and performant SOA with GraphQL APIs
-    % \item Redesigning of the data model with elements of NoSQL in order to support a flexible type system for identity documents configured with Dhall
-    % \item Designing and implementing the first version of the authentication and authorization flows
-    % \item Transitioning the API's codebase from a dynamic to a static type system via Sorbet
-    % \item Implementation of the early billing infrastructure and logic with Killbill and Stripe
-    % \item Benchmarking and deployment of text recognition, face recognition and comparison models on MXNet
-    % \item Iterating on the UI/UX of the authentication client with implementation in React (stateless components with hooks), RxJS and Typescript
-    % \item Reverse engineering of vendors' minified or obfuscated frontend libraries to achieve custom UX
-    % \item CI/CD pipeline management with the Hashicorp stack (Ansible, Consul, Terraform, Nomad)
-    % \item Technical sales and customer support
-    % \item Interviewing engineering candidates and reviewing incoming applications
-    % \item Onboarding and mentoring of new engineers
-    % \item Incident response, security reviews and addressing vulnerabilites uncovered by red teamers
-    % \item Authoring of customer facing and internal documentation 
-    % \item Management and quality assurance of outsourced work by contractors
-    % \end{itemize}
-    % \end{multicols}
 \end{rSection}
 
-\begin{rSection}{PROJECTS}
+\begin{rSection}{OTHER PROJECTS}
 
-    {\bf Stonkify} \href{https://stonkify.io}{\faicon{link}} \href{https://stonkify.io}{\faicon{github}} \hfill {Apr 2021 - Jul 2021}
+    {\bf Stonkify} \href{https://github.com/stonkify}{\faicon{github}} \href{https://stonkify.io}{\faicon{link}} \hfill {Mag 2021 - Jul 2021}
     \vspace{3pt}
-    \\ Using Monero and I2P to issue equity to fund small creators with no access to capital. \textbullet \space Assembled a small team of 3 developers met through YC's SUS program
-    \textbullet \space Built Nx monorepo for NestJS API and React frontend \textbullet \space Built agent based simulation of the market in Python \textbullet \space Designed Spring AMPQ microservice interface for 3rd party order book matching engine
-    \textbullet \space Contacted a few YouTubers who expressed interest in a commercial solution
+    \\ Frictionless securities market to incentivize discovery and funding of upcoming internet creators \textbullet \space Assembled a small technical team through YC's SUS program
+    \textbullet \space Built Typescript app using a Nx monorepo with NestJS GraphQL API and NextJS React frontend \textbullet \space Built agent based simulation of the market (Python)
+    \textbullet \space Designed Spring AMPQ microservice interface for 3rd party order book matching engine \textbullet \space Drafted a protocol for limitation of liability of customers using Monero and I2P
+    \textbullet \space Undertook business planning, market research and user acquisition
 
         {\bf Delegated authentication over TLS} \href{https://github.com/ma9o/helib-aes-tests}{\faicon{github}} \hfill { Nov 2020 }
     \vspace{3pt}
-    \\ An online identity can be scattered across many different providers, all of which might not be implementing a delegated authentication protocol such as SAML or OpenID.
-    A service provider willing to authenticate users
-    against such a service would have to request access to their credentials and possibly face GDPR issues.
-    In this scenario the service provider can still preserve his users' privacy via a distributed usage of AES CTR mode and TLS session tickets, as long as the identity provider is securing his API with TLS 1.3 and AES bulk encryption.
+    \\ Drafted a delegated authentication protocol for identity providers that do not implement SAML/OpenID, requiring only TLS session tickets and AES bulk encryption
+    \textbullet \space In depth study and experimentation with AES CTR mode, TLS 1.3 and homomorphic encryption
+    \textbullet \space PoC using openSSL and Mozilla's nss and IBM's homenc libraries (C++)
 
-        {\bf Curation market for Brave ads network} \href{https://github.com/ma9o/brave-core}{\faicon{github}} \hfill { Feb 2019}
+    {\bf Curation market for Brave ads network}  \href{https://github.com/ma9o/brave-core}{\faicon{github}} \href{https://brave.com}{\faicon{link}} \hfill { Feb 2019}
     \vspace{3pt}
-    \\ Brave is a Chromium-based web browser with a client side advertising engine which doesn't record personal data.
-    Such ads are sampled from a candidates pool managed by a central authority which is responsible for maintaining the  quality of the ad network high. A decentralized ranking algorithm can be put in place through a curation market, which I implemented in a smart contract (using Bancor) that can be interfaced with a browser extension.
+    \\ Substituted the random ads selection algorithm with a deterministic one based on a curation market
+    \textbullet \space Modified and rebuilt Brave (Chromium) to natively interface with an Ethereum node (Ninja, gRPC, C++)
+    \textbullet \space Implemented on-chain bonding curves with Bancor
+    \textbullet \space Modified chrome extension to enable purchase and sale of tokens
 
-        {\bf Anonimized Aragon voting app} \href{https://github.com/ma9o/aranon}{\faicon{github}} \hfill { Jan 2019}
+        {\bf Anonimized Aragon voting app} \href{https://github.com/ma9o/aranon}{\faicon{github}}\href{https://aragon.org}{\faicon{link}} \hfill { Jan 2019}
     \vspace{3pt}
-    \\ The Aragon network allows organizations to operate through a decentralized and permissioned framework. Organizations with such a requirement might also need anonimity of transactions, which is not (as of Jan. 2019) provided out of the box by Ethereum.
-    Authority with anonomity can be hereby achieved through ring signatures in the browser, which I implemented with a Python library transpiled into C++ and then compiled into WASM.
+    \\ Added ring signatures to the voting dApp to conceal the identity of voters. The signatures are computed off-chain and verified on-chain.
+    \textbullet \space Ring signatures in the browser from Python library transpiled into C++ and compiled to WebAssembly
+    \textbullet \space Optimized on-chain signature verification for the specific use case to reduce gas fees (Solidity)
 
 \end{rSection}
 
@@ -113,8 +99,9 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
+
     {\bf BSc CS, Georg August Universitaet Goettingen} \href{https://www.uni-goettingen.de/en/1.html}{\faicon{link}} \hfill {Oct 2018 - Mar 2019}
-    \\ Exchange year, attended MSc sourses \textbullet \space Parallel computing (CUDA, OpenMP, SLURM)
+    \\ Exchange year, attended MSc courses \textbullet \space Parallel computing (CUDA, OpenMP, SLURM)
     \textbullet \space Information theory and statistics
     \textbullet \space Data science (PySpark, sklearn, seaborn, NetworkX) \href{https://github.com/ma9o/repo-mining}{\faicon{github}}
     \textbullet \space Category theory for programmers (Haskell)
@@ -124,11 +111,8 @@
 \end{rSection}
 
 
-% \begin{rSection}{MISC}
-%     {\bf Interests} \hfill { October 2018 - March 2019}
-%     \\ \textbullet \space  sdf
-%     \\{\bf Languages} \hfill { September 2016 - September 2018}
-%     \\ BSc Computer Science
-% \end{rSection}
+\begin{rSection}{MISC}
+    {\bf Interests} economics, history, linguistics, AI, cinema, gliding, rts \hfill {\bf Languages} Italian, English, German, Spanish
+\end{rSection}
 
 \end{document}
